@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Facebook OG Tags -->
+    <meta property="og:image" content="screenshot.png" />
+    <meta property="og:title" content="Só mais um site WordPress" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://partinersgold.dev" />
+    <meta property="og:site_name" content="Partiners Gold" />
+    <!-- ================ -->
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>business &#8211; Partiners Gold</title>
+    <link rel='stylesheet' id='style-css' href='assets/css/style.css' type='text/css' media='all' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- ================ -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="home page page-id-5 page-template-default">
+    <img width="1905" height="906" src="content/uploads/2016/11/site_partiners_inicio.jpg" class="bg wp-post-image" alt="site_partiners_inicio" srcset="content/uploads/2016/11/site_partiners_inicio.jpg 1905w, content/uploads/2016/11/site_partiners_inicio-300x143.jpg 300w, content/uploads/2016/11/site_partiners_inicio-768x365.jpg 768w, content/uploads/2016/11/site_partiners_inicio-1024x487.jpg 1024w, content/uploads/2016/11/site_partiners_inicio-290x138.jpg 290w" sizes="(max-width: 1905px) 100vw, 1905px" />
+    <div class="content-home-page text-center">
+        <img src=" assets/images/logomarca.png " alt="Partiners Gold" class="logo-home img-responsive center-block">
+        <ul class="list-inline list-call-home text-uppercase">
+            <li><a href="http://partinersgold.dev/business">business</a></li>
+            <li><a href="http://partinersgold.dev/moda">moda</a></li>
+        </ul>
+        <div class="copyright text-left">
+            <img src=" assets/images/logo-agencia.png " alt="Agência Zero1" class="pull-left">
+            <p>
+                ®Partiners Gold 2016 - Todos Os direitos reservados by ZERO1 Agência Criativa
+            </p>
+        </div>
+    </div>
+    <script type='text/javascript' src='assets/js/main.min.js'></script>
+    <script src="assets/libs/owl-carousel/owl.carousel.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+        var loop = $('.owl-carousel .item').size() > 1;
+        $("#main-slider").owlCarousel({
+            // navigation : true, // Show next and prev buttons
+            // slideSpeed : 300,
+            // paginationSpeed : 400,
+            // singleItem:true,
+            // pagination: true,
+            // navigation: false
+            nav: false,
+            dots: true,
+            items: 1,
+            loop: loop,
+            autoplay: loop,
+            autoplayTimeout: 5000
+        });
+
+        $("#carousel-marcas").owlCarousel({
+            items: 4, //10 items above 1000px browser width
+            itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+            itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+            itemsTablet: [600, 2], //2 items between 600 and 0
+            itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+        });
+
+    });
+    </script>
+</body>
+
+</html>

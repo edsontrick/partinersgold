@@ -1,0 +1,21 @@
+// ==========================================================================
+// Theme Style Main
+// ==========================================================================
+
+/*!
+Theme Name: Partiners Gold
+Author URI: http://sandro.site/
+Description: Arquivo css desenvolvido para a empresa Partiners Gold.
+Author: Developers Zero 1
+Author URI: http://www.agenciazero1.com.br/
+*/
+
+//@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import "compass/typography";
+@import "compass/css3";
+
+@import
+        "variables",           // Theme       Custom Variables
+        "bootstrap/bootstrap", // Bootstrap   Styles Core
+        "layout"               // Theme       Custom Layout
+;

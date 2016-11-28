@@ -1,0 +1,48 @@
+// ==========================================================================
+// Theme Custom Variables
+// ==========================================================================
+
+@include font-face("latoblack", font-files("../fonts/lato-black-webfont.woff2", "../fonts/lato-black-webfont.woff"));
+@include font-face("latobold", font-files("../fonts/lato-bold-webfont.woff2", "../fonts/lato-bold-webfont.woff"));
+@include font-face("latohairline", font-files("../fonts/lato-hairline-webfont.woff2", "../fonts/lato-hairline-webfont.woff"));
+@include font-face("latolight", font-files("../fonts/lato-light-webfont.woff2", "../fonts/lato-light-webfont.woff"));
+@include font-face("latoregular", font-files("../fonts/lato-regular-webfont.woff2", "../fonts/lato-regular-webfont.woff"));
+
+
+//
+// Brand Color
+//
+
+$brand-primary	        : 		#ffffff; //branco
+$brand-second 	        : 		#bda966; //amarelo
+$brand-default          : 		#c5b371; //amarelo 2
+$brand-color  	        : 		#343539; //cinza azulado
+$brand-socio	        : 		#89898c; //cinza claro
+$brand-cinza            : 		#73757e; //cinza
+$brand-cinza-escuro     : 		#232326; //cinza escuro
+$brand-body				:		#d2d2d2; //cor do body
+$brand-default-escuro   :		#988958;
+$brand-copyright   		:		#5d5e65;
+$brand-footer   		:		#f1f1f1;
+
+
+
+//
+// Brand Fonts
+//
+$font-family-sans-serif : 		'latoregular', sans-serif;
+$font-size-base         :        10px !default;
+
+
+//Shapes in sass
+@mixin rectangle($width, $height, $color) {
+	width: $width;
+	height: $height;
+	background: $color;
+}
+
+@mixin parallelogram($width, $height, $skew, $color) {
+	@include rectangle($width, $height, $color);
+	background: $color;
+	transform: skew($skew);
+}
